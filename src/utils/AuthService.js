@@ -1,14 +1,14 @@
 import decode from 'jwt-decode';
 import { browserHistory } from 'react-router';
 import auth0 from 'auth0-js';
-const ID_TOKEN_KEY = 'id_token';
+const ID_TOKEN_KEY = '59bedeb2109a3202385065f5';
 const ACCESS_TOKEN_KEY = 'access_token';
 
-const CLIENT_ID = 'EeobY3jxsMoFREmqfmsZwAALQb73WeWm';
-const CLIENT_DOMAIN = 'unicoder.auth0.com';
-const REDIRECT = 'http://localhost:3000/callback';
+const CLIENT_ID = 'p1Ugb2I93aRIasKgXeyNfMYK_WRD2-KO';
+const CLIENT_DOMAIN = 'fabox.eu.auth0.com';
+const REDIRECT = 'http://localhost:3002/callback';
 const SCOPE = 'full:access';
-const AUDIENCE = 'http://miniflix.com';
+const AUDIENCE = 'https://fabox.eu.auth0.com/api/v2/';
 
 var auth = new auth0.WebAuth({
   clientID: CLIENT_ID,

@@ -4,8 +4,19 @@ import Nav from './Nav';
 
 class Upload extends Component {
 
-  render() {
+  uploadWidget = () => {
+      window.cloudinary.openUploadWidget(
+        { cloud_name: 'cloud_name',
+          upload_preset: '<unsigned-preset>',
+          tags: ['fabox'],
+          sources: ['local', 'url', 'google_photos', 'facebook', 'image_search']
+        },
+        function(error, result) {
+            console.log("This is the result of the last upload", result);
+        });
+    }
 
+  render() {
     return (
       <div>
         <Nav />
